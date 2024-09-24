@@ -17,7 +17,6 @@ const options = [
   { value: 'gh', label: 'Ghana', flag: 'GH' },
   { value: 'us', label: 'United States', flag: 'US' },
   { value: 'ng', label: 'Nigeria', flag: 'NG' },
-  // Add more options here...
 ];
 
 // Show only the flag and dropdown arrow in the selected value
@@ -86,9 +85,9 @@ const Layout = () => {
               options={options}
               components={{ SingleValue: customSingleValue, Option: customOption }}
               className="mt-[-25px]"
-              defaultValue={options[0]}  // Ghana as the default selected option
-              isSearchable={false}  // Disable searching if you want
-              styles={customStyles}  // Apply custom styles to remove border and background
+              defaultValue={options[0]} 
+              isSearchable={false}  
+              styles={customStyles}
             />
           </div>
         </header>
